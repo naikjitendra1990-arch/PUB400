@@ -10,7 +10,7 @@ pipeline {
 
         stage('Display CL Source') {
             steps {
-                bat 'type testcl.clp'
+                bat 'type testcl.cl'
             }
         }
     }
