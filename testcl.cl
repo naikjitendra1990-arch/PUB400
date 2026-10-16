@@ -1,0 +1,8 @@
+PGM        PARM(&A &B)
+DCL        VAR(&A) TYPE(*DEC) STG(*AUTO) LEN(3 0)
+DCL        VAR(&B) TYPE(*DEC) STG(*AUTO) LEN(3 0)
+DCL        VAR(&C) TYPE(*DEC) STG(*AUTO) LEN(3 0)
+
+CHGVAR     VAR(&C) VALUE(&A + &B *2)
+
+ENDPGM
